@@ -1,15 +1,15 @@
-import DashView from './components/Dash.vue'
-import LoginView from './components/Login.vue'
-import NotFoundView from './components/404.vue'
+import DashView from './pages/Dash.vue'
+import LoginView from './pages/Login.vue'
+import NotFoundView from './pages/404.vue'
 
 // Import Views - Dash
-import DashboardView from './components/views/Dashboard.vue'
-import TablesView from './components/views/Tables.vue'
-import TasksView from './components/views/Tasks.vue'
-import SettingView from './components/views/Setting.vue'
-import AccessView from './components/views/Access.vue'
-import ServerView from './components/views/Server.vue'
-import ReposView from './components/views/Repos.vue'
+import DashboardView from './pages/views/Dashboard.vue'
+import TablesView from './pages/views/Tables.vue'
+import TasksView from './pages/views/Tasks.vue'
+import SettingView from './pages/views/Setting.vue'
+import AccessView from './pages/views/Access.vue'
+import ServerView from './pages/views/Server.vue'
+import ReposView from './pages/views/Repos.vue'
 
 // Routes
 const routes = [

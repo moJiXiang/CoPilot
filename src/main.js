@@ -4,13 +4,13 @@ import VueRouter from 'vue-router'
 
 import { sync } from 'vuex-router-sync'
 import routes from './routes'
-import store from './store'
+import store from './vuex/store'
 
 // Import Helpers for filters
 import { domain, count, prettyDate, pluralize } from './filters'
 
 // Import Views - Top level
-import AppView from './components/App.vue'
+import AppView from './App.vue'
 
 // Import Install and register helper items
 Vue.filter('count', count)

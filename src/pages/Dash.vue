@@ -162,7 +162,7 @@
 import faker from 'faker'
 import { mapState } from 'vuex'
 import config from '../config'
-import Sidebar from './Sidebar'
+import Sidebar from '../components/Sidebar'
 import 'hideseek'
 
 export default {
@@ -182,9 +182,11 @@ export default {
     }
   },
   computed: {
-    ...mapState([
-      'userInfo'
-    ]),
+    ...mapState('auth/', {
+      // userInfo: state => state.auth.userInfo
+      // userInfo: 'auth.userInfo'
+      userInfo: state => state.userInfo
+    }),
     demo () {
       return {
         displayName: faker.name.findName(),
